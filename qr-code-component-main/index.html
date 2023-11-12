@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Serif:wght@300&family=Libre+Baskerville&family=Montserrat:wght@100&family=Outfit:wght@400;800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <style>
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(198, 221, 241);
+      height: 800px;
+      width: 100%;
+    }
+    .box{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      border-radius: 10px;
+      width: 330px;
+      height: 60%;
+      background-color: hsl(0, 0%, 100%);
+    }
+    .outfit{
+      font-family: 'Outfit';
+      font-size: 20px;
+    }
+    .inbox{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 250px;
+      font-weight: bolder;
+    }
+    .para{
+      font-family: serif;
+      font-size: 15px;
+    }
+    @media (max-width: 600px){
+      .box{
+        width: 70%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        border-radius: 10px;
+      }
+      .inbox{
+        width: 80%;
+        font-weight: bolder;
+      }
+    .image{
+      width: fit-content;
+      margin-left: 30px; 
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .outfit{
+      font-family: 'Outfit';
+      font-size: 20px;
+      margin-left: 35px;
+      margin-top: 35px;
+    }
+    .para{
+      font-family: serif;
+      font-size: 15px;
+      margin-left: 40px;
+      text-align: center;
+    }
+    body{
+      background-color: rgb(198, 221, 241);
+    }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="box">
+    <img class=" image" src="/Users/shaikfarid/Desktop/web practice/qr-code-component-main/images/image-qr-code.png" style="width: 280px; border-radius: 10px; position: relative; top: 25px;">
+    <div class="inbox">
+      <p class="outfit">Improve your front-end skills by building projects</p>
+      <p class="para">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
+  </div>
+</div>
+</body>
+</html>
